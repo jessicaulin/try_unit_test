@@ -18,12 +18,7 @@ public class LogAnalyzerTest {
 	private class TestableLogAnalyzer extends LogAnalyzerUsingFactoryMethod {
 		public boolean isSupported = true;
 		
-		@Override
-		public boolean isValidLogFileName(String fileName) {
-			return this.isValid(fileName);
-		}
-
-		private boolean isValid(String fileName) {
+		protected boolean isValid(String fileName) {
 			return isSupported;
 		}
 	}

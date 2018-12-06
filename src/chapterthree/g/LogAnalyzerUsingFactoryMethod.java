@@ -5,7 +5,7 @@ public class LogAnalyzerUsingFactoryMethod {
 		return this.isValid(fileName);
 	}
 
-	private boolean isValid(String fileName) {
+	protected boolean isValid(String fileName) {
 		FileExtensionManagerImp mgr = new FileExtensionManagerImp();
 		return mgr.isValid(fileName);
 	}
